@@ -3,7 +3,11 @@ kettle-tdd
 
 etl test driven development with pentaho kettle
 
-Linux complaint only (at the moment)
+Linux compliant only (at the moment).
+
+Developed and tested with PDI 5.0.1 Stable release.
+
+====
 
 Environment variable to be set in the shell where spoon will be executed
 (adjust with your path)
