@@ -51,8 +51,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>98</xloc>
-      <yloc>109</yloc>
+      <xloc>50</xloc>
+      <yloc>108</yloc>
       </entry>
     <entry>
       <name>get_list_of_tests.ktr</name>
@@ -85,7 +85,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>263</xloc>
-      <yloc>109</yloc>
+      <yloc>107</yloc>
       </entry>
     <entry>
       <name>test_runner</name>
@@ -120,13 +120,52 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>416</xloc>
-      <yloc>109</yloc>
+      <yloc>107</yloc>
+      </entry>
+    <entry>
+      <name>Set variables</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>KDD_TEST_FOLDER</variable_name>
+          <variable_value>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>KDD_CONFIG_FOLDER</variable_name>
+          <variable_value>&#x24;&#x7b;KDD_TEST_FOLDER&#x7d;&#x2f;config</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>KDD_SYSTEM_FOLDER</variable_name>
+          <variable_value>&#x24;&#x7b;KDD_CONFIG_FOLDER&#x7d;&#x2f;system</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>149</xloc>
+      <yloc>108</yloc>
       </entry>
   </entries>
   <hops>
     <hop>
+      <from>get_list_of_tests.ktr</from>
+      <to>test_runner</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>START</from>
-      <to>get_list_of_tests.ktr</to>
+      <to>Set variables</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -134,8 +173,8 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>get_list_of_tests.ktr</from>
-      <to>test_runner</to>
+      <from>Set variables</from>
+      <to>get_list_of_tests.ktr</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
