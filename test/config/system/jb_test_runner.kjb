@@ -61,7 +61,7 @@
       </entry>
     <entry>
       <name>setUp</name>
-      <description/>
+      <description>Create all the fixtures needed for tests</description>
       <type>JOB</type>
       <specification_method>filename</specification_method>
       <job_object_id/>
