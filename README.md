@@ -5,7 +5,7 @@ etl test driven development with pentaho kettle
 
 Linux compliant only (at the moment).
 
-Developed and tested with PDI 5.0.1 Stable release.
+**Still under development** with PDI 5.0.1 Stable release.
 
 ====
 
